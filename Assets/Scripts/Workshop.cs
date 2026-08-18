@@ -12,30 +12,72 @@ public class Workshop : MonoBehaviour
         // As04_AndOrOperatorExample();
         // As05_GuessingNumberExample();
         // As06_GuessingNumberMoreOrLessExample();
-        // As07_VerifyIdentityExample();
+        As07_VerifyIdentityExample();
     }
 
     public bool isSixOClock;
     public void As01_SyntaxIf()
     {
-        
+        if (isSixOClock)
+        {
+            Debug.Log("The Door Open");
+        }
+        Debug.Log("Knock Knock!");
     }
 
     public string password;
     public void As02_StringComparisonExample()
     {
-        
+        if (password == "Games")
+        {
+            Debug.Log("Correct");
+        }
+        else {
+            Debug.Log("Incorrect");
+        }
     }
 
     public int as03Number;
     public void As03_NumberComparisonExample()
     {
-
+        if(as03Number > 10)
+        {
+            Debug.Log("as03Number > 10");
+        }
+        if (as03Number < 10)
+        {
+            Debug.Log("as03Number < 10");
+        }
+        if (as03Number == 10)
+        {
+            Debug.Log("as03Number = 10");
+        }
+        if (as03Number >= 10)
+        {
+            Debug.Log("as03Number >= 10");
+        }
+        if (as03Number <= 10)
+        {
+            Debug.Log("as03Number <= 10");
+        }
+        if (as03Number != 10)
+        {
+            Debug.Log("as03Number != 10");
+        }
     }
 
     public int as04Number;
     public void As04_AndOrOperatorExample()
     {
+        if (as04Number > 8 && as04Number < 12)
+        {
+            Debug.Log("> 8 && < 12");
+        }
+        if (as04Number > 8 || as04Number < 12)
+        {
+                Debug.Log("> 8 || < 12");
+        }
+
 
     }
 
@@ -43,14 +85,27 @@ public class Workshop : MonoBehaviour
     public int as05RandomNumber;
     public void As05_GuessingNumberExample()
     {
-
+        if (as05GuessingNumber == as05RandomNumber)
+        {
+            Debug.Log("Congrat!");
+        }
+        else { Debug.Log("Try Again!"); }
+        
     }
 
     public int as06GuessingNumber;
     public int as06RandomNumber;
     public void As06_GuessingNumberMoreOrLessExample()
     {
-
+        if (as06GuessingNumber == as06RandomNumber)
+        {
+            Debug.Log("Congrat");
+        }
+        else if (as06GuessingNumber > as06RandomNumber)
+        {
+            Debug.Log("Too High");
+        }
+        else { Debug.Log("Too Low"); }
     }
 
     public string as07Username;
@@ -59,6 +114,21 @@ public class Workshop : MonoBehaviour
     public bool as07IsPaid;
     public void As07_VerifyIdentityExample()
     {
+        if (as07Username == "User" && as07Password == "1234")
+        {
+            Debug.Log("Logged in");
 
+            if (as07IsPaid)
+            {
+                Debug.Log("Vip Member");
+            }
+            else { Debug.Log("Free Member"); };
+            if (as07Age >= 18)
+            {
+                Debug.Log("You have access to exclusive content.");
+            }
+        }
+        else { Debug.Log("Invalid username or password"); }
     }
+
 }

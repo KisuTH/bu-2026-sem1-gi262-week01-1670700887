@@ -321,23 +321,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Unity.RenderPipelines.Universal.Runtime::UnityEngine.Rendering.Universal.UniversalAdditionalLightData
-  m_UsePipelineSettings: 1
-  m_AdditionalLightsShadowResolutionTier: 2
-  m_CustomShadowLayers: 0
-  m_LightCookieSize: {x: 1, y: 1}
-  m_LightCookieOffset: {x: 0, y: 0}
-  m_SoftShadowQuality: 0
-  m_RenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_ShadowRenderingLayersMask:
-    serializedVersion: 0
-    m_Bits: 1
-  m_Version: 4
-  m_LightLayerMask: 1
-  m_ShadowLayerMask: 1
-  m_RenderingLayers: 1
-  m_ShadowRenderingLayers: 1
 --- !u!1 &1734758266
 GameObject:
   m_ObjectHideFlags: 0
@@ -367,18 +350,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 51c22fb7f59b3b74792a60f7ec853410, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Workshop
-  isSixOClock: 0
-  password: 
-  as03Number: 0
-  as04Number: 0
-  as05GuessingNumber: 0
-  as05RandomNumber: 0
-  as06GuessingNumber: 0
-  as06RandomNumber: 0
-  as07Username: 
-  as07Password: 
-  as07Age: 0
-  as07IsPaid: 0
+  isSixOClock: 1
+  password: Game
+  as03Number: 10
+  as04Number: 55
+  as05GuessingNumber: 10
+  as05RandomNumber: 15
+  as06GuessingNumber: 11
+  as06RandomNumber: 10
+  as07Username: User
+  as07Password: 1234
+  as07Age: 18
+  as07IsPaid: 1
 --- !u!4 &1734758268
 Transform:
   m_ObjectHideFlags: 0
