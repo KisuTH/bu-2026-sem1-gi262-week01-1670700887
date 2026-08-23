@@ -42,7 +42,7 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement logic to return day name
         // Example: Debug.Log("Monday");
-        if (as02Day == 1)
+        /*if (as02Day == 1)
         {
             Debug.Log("Monday");
         }
@@ -73,6 +73,34 @@ public class Assignment : MonoBehaviour
         else
         {
             Debug.Log("Invalid day");
+        }*/
+
+        switch (as02Day) 
+        {
+            case 1:
+                Debug.Log("Monday");
+                break;
+            case 2:
+                Debug.Log("Tuesday");
+                break;
+            case 3:
+                Debug.Log("Wednesday");
+                break;
+            case 4:
+                Debug.Log("Thursday");
+                break;
+            case 5:
+                Debug.Log("Friday");
+                break;
+            case 6:
+                Debug.Log("Saturday");
+                break;
+            case 7:
+                Debug.Log("Sunday");
+                break;
+            default:
+                Debug.Log("Invalid day");
+                break;
         }
     }
 
@@ -124,7 +152,7 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Implement leap year check logic
         // Example: Debug.Log("True");
-        if ((as05Year % 400 == 0) || (as05Year % 4 == 0 && as05Year % 100 != 0))
+        if (as05Year % 400 == 0 || as05Year % 4 == 0 && as05Year % 100 != 0)
         {
             Debug.Log("True");
         }
@@ -220,6 +248,7 @@ public class Assignment : MonoBehaviour
     public int as09ComputerChoice;
     public void As09_RockPaperScissorsExample()
     {
+        // 1 = Scissors, 2 = Rock, 3 = Paper
         if (as09UserChoice < 1 || as09UserChoice > 3 || as09ComputerChoice < 1 || as09ComputerChoice > 3)
         {
             Debug.Log("Invalid choice");
@@ -246,15 +275,15 @@ public class Assignment : MonoBehaviour
     {
         // TODO: Add your implementation here
         // Example: Debug.Log("result as string");
-        if (as10WeaponType == "Sword")
+        if (as10WeaponType == "Sword" || as10WeaponType == "sword")
         {
             Debug.Log("Damage: " + (as10BaseDamage * 2));
         }
-        else if (as10WeaponType == "Bow")
+        else if (as10WeaponType == "Bow" || as10WeaponType == "bow")
         {
             Debug.Log("Damage: " + (as10BaseDamage + 10));
         }
-        else if (as10WeaponType == "Staff")
+        else if (as10WeaponType == "Staff" || as10WeaponType == "staff")
         {
             Debug.Log("Damage: " + (as10BaseDamage + 20));
         }
