@@ -263,6 +263,12 @@ public class Assignment : MonoBehaviour
         {
             Debug.Log("User wins");
         }
+        else if ((as09UserChoice == 1 && as09ComputerChoice == 1) ||
+                 (as09UserChoice == 2 && as09ComputerChoice == 2) ||
+                 (as09UserChoice == 3 && as09ComputerChoice == 3))
+        {
+            Debug.Log("Draw");
+        }
         else
         {
             Debug.Log("Computer wins");
